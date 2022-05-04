@@ -1,0 +1,237 @@
+/* Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    #innovation-section h6 {
+        font-size: 9px;
+        
+    }
+    
+    #details-tile {
+        grid-template-columns: repeat(4, 70px);
+        justify-content: center;
+        column-gap: 5px;
+        margin-bottom: 0;
+        
+    }
+    
+    #details-tile .water {
+        grid-column: 1/2;
+    }
+    #details-tile .rugged {
+        grid-column: 2/3;
+    }
+    
+    #details-tile .recycled {
+        grid-column: 3/4;
+    
+    }
+    
+    #details-tile .lightweight {
+        grid-column: 4/5;
+    
+    }
+    
+    #details-tile .water,
+    #details-tile .rugged,
+    #details-tile .recycled,
+    #details-tile .lightweight {
+        font-size: 7px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    
+    #donate-tile img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    #donate-tile {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(300, 1fr));
+        text-align: center;
+        
+    }
+
+    #donate-tile .community-text {
+        grid-row: 1/2;
+    }
+    #donate-tile .community {
+        grid-row: 2/3;
+    }
+    #donate-tile .donate-text{
+        grid-row: 3/4;
+    }
+    #donate-tile .donate {
+        grid-row: 4/5;
+    }
+    #donate-tile .disposable {
+        grid-row: 6/7;    
+    }
+    #donate-tile .disposable-text {
+        grid-row: 5/6;
+    }
+    
+
+    #donate-tile .community-text,
+    #donate-tile .donate-text,
+    #donate-tile .disposable-text {
+        margin: auto 15px  ;
+    }
+    
+    #donate-tile .community-text .learn-button,
+    #donate-tile .donate-text .learn-button,
+    #donate-tile .disposable-text .learn-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* iPads or Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+        #innovation-section h6 {
+            font-size: 9px;
+            
+        }
+        #details-tile {
+            grid-template-columns: repeat(4, 90px);
+            justify-content: center;
+            column-gap: 25px;
+            margin-bottom: 10px;
+        }
+        
+        #details-tile .water {
+            grid-column: 1/2;
+        }
+        #details-tile .rugged {
+            grid-column: 2/3;
+        }
+        
+        #details-tile .recycled {
+            grid-column: 3/4;
+        
+        }
+        
+        #details-tile .lightweight {
+            grid-column: 4/5;
+        
+        }
+
+
+        
+        
+        #details-tile .water,
+        #details-tile .rugged,
+        #details-tile .recycled,
+        #details-tile .lightweight {
+            font-size: 7px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    
+        #donate-tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        #donate-tile {
+            margin-top: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fill, minmax(300, 1fr));
+            text-align: center;
+            
+        }
+    
+        #donate-tile .community-text {
+            grid-row: 1/2;
+        }
+        #donate-tile .community {
+            grid-row: 2/3;
+        }
+        #donate-tile .donate-text{
+            grid-row: 3/4;
+        }
+        #donate-tile .donate {
+            grid-row: 4/5;
+        }
+        #donate-tile .disposable {
+            grid-row: 6/7;    
+        }
+        #donate-tile .disposable-text {
+            grid-row: 5/6;
+        }
+        
+    
+        #donate-tile .community-text,
+        #donate-tile .donate-text,
+        #donate-tile .disposable-text {
+            margin: auto 20px  ;
+        }
+        
+        #donate-tile .community-text .learn-button,
+        #donate-tile .donate-text .learn-button,
+        #donate-tile .disposable-text .learn-button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 992px) {
+    #details-tile {
+        grid-template-columns: repeat(4, 115px);
+        justify-content: center;
+    }
+    
+    #details-tile .water {
+        grid-column: 1/2;
+    }
+    #details-tile .rugged {
+        grid-column: 2/3;
+    }
+    
+    #details-tile .recycled {
+        grid-column: 3/4;
+    
+    }
+    
+    #details-tile .lightweight {
+        grid-column: 4/5;
+    
+    }
+    
+
+    
+
+}
+
+/* Desktop */
+@media (min-width: 993px) and (max-width: 1200px) {
+    
+    #details-tile {
+        grid-template-columns: repeat(4, 120px);
+        justify-content: center;
+    }
+    
+    #details-tile .water {
+        grid-column: 1/2;
+    }
+    #details-tile .rugged {
+        grid-column: 2/3;
+    }
+    
+    #details-tile .recycled {
+        grid-column: 3/4;
+    
+    }
+    
+    #details-tile .lightweight {
+        grid-column: 4/5;
+    
+    }
+
+
+}

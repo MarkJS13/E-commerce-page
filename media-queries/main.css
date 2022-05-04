@@ -1,0 +1,49 @@
+
+/* Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
+
+#main .navbar {
+    padding-top: px;
+    display: flex;
+    justify-content: space-around;
+    }
+.navbar .menu,
+.navbar .user,
+.navbar .shop {
+    flex-basis: 0;
+}
+.navbar .search {
+    flex-grow: 0;
+}  
+
+#main .home h1 {
+    font-size: 25px;
+}
+#main .home p:nth-child(2) {
+    font-size: 15px;
+}
+#main .home p:nth-child(3) {
+    padding: 8px 40px;
+}
+
+ 
+}
+
+
+/* iPads or Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 992px) {
+
+
+   
+}
+
+/* Desktop */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}

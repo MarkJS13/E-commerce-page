@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+:root {
+    --hover: scale(1.1);
+}
+#container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(4, 1fr)
+}
+
+
+#main {
+    height: 100vh;
+    background-image: url('images/relax.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#main .navbar img {
+    width: 25px;
+    height: 25px;
+}
+#main .navbar {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .menu {
+    flex-basis: 70px;
+}
+
+.navbar .search {
+    flex-grow: 2;
+}
+.navbar .user {
+    flex-basis: 70px;
+}
+.navbar .shop {
+    flex-basis: 70px;
+}
+
+#main .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+    color: rgb(252, 245, 245);
+}
+
+#main .home h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#main .home p:nth-child(2) {
+    text-transform: capitalize;
+}
+#main .home p:nth-child(3) {
+    padding: 10px 50px;
+    border: 1px solid white;
+    text-transform: capitalize;
+    transition: transform .5s;
+}
+
+#main .home p:nth-child(3):hover {
+    color: black;
+    background-color: white;
+    transform: var(--hover);
+}
+
+#logo-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#logo-section p{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+
+#logo-section img{
+    height: 100px;
+    width: 70px;
+    
+}
+
+#logo-section #brands {
+    display: grid;
+    margin: 50px 20px 100px 20px;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+#logo-section #description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    column-gap: 40px;
+}
+
+#logo-section #description .text-tile {
+    margin-left: 50px;
+    text-align: justify;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#logo-section #description .text-tile .p1 {
+    text-align: justify;
+}
+#logo-section #description .text-tile .p2 {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#logo-section #description .text-tile h1 {
+    margin-bottom: 5px;
+}
+
+#logo-section #description .text-tile .learn-more {
+    width: 200px;
+    padding: 10px 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    transition: transform .5s;
+}
+#logo-section #description .text-tile .learn-more:hover {
+    color: white;
+    background-color: black;
+    transform: var(--hover);
+}
+
+#logo-section #description .text-img img {
+    width: 100%;
+    height: 400px;
+}
+
+#bag-section {  
+    border-top: 1px solid rgb(95, 82, 82);
+}
+
+#bag-section img{
+    width: 250px;
+    height: 200px;
+}
+
+#bag-section #bags {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    justify-items: center;
+    text-align: center;
+}
+.backpacks1 p:nth-child(2),
+.backpacks2 p:nth-child(2),
+.backpacks3 p:nth-child(2),
+.backpacks4 p:nth-child(2) {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+#bags .price {
+    font-size: 12px;
+    margin: 0;
+}
+
+#text-tile-bags {
+    margin: 150px;
+}
+
+#text-tile-bags p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#text-tile-bags h4 {
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgb(80, 106, 145);
+}
+
+
+/*---*/
+#places-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+#places-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.txt1 {
+    position: absolute;
+    top: 400px;
+    left: 415px;
+    text-align: center;
+    color: white;
+
+}
+
+.txt1 h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.txt1 h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.txt1 p {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px;
+    border: 1px solid white;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .5s;
+}
+.txt1 span {
+    color: rgba(158, 152, 152, 0.788);
+}
+
+.txt1 p:hover {
+    transform: var(--hover);
+    background-color: white;
+    color: black;
+}
+
+/*txt2*/
+
+.txt2 {
+    position: absolute;
+    top: 1400px;
+    left: 500px;
+    text-align: center;
+    color: white;
+}
+
+.txt2 h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.txt2 p {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px;
+    border: 1px solid white;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .5s;
+}
+
+
+.txt2 p:hover {
+    transform: var(--hover);
+    background-color: white;
+    color: black;
+}
+
+
+/*-----*/
+#innovation-section h6 {
+    text-align: center;
+    font-size: 10px;
+    margin: 50px auto;
+}
+
+#details-tile .water,
+#details-tile .rugged,
+#details-tile .recycled,
+#details-tile .lightweight {
+    padding: 5px 0;
+    background-color: black;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;;
+}
+
+#details-tile {
+    display: grid;
+    grid-template-columns: 200px repeat(4, 1fr) 200px;
+    margin: auto 45px;
+    column-gap: 50px;
+    margin-bottom: 200px;
+    
+}
+
+#details-tile .water {
+    grid-column: 2/3;
+}
+#details-tile .rugged {
+    grid-column: 3/4;
+}
+
+#details-tile .recycled {
+    grid-column: 4/5;
+
+}
+
+#details-tile .lightweight {
+    grid-column: 5/6;
+
+}
+
+
+
+
+#donate-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#donate-tile {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 400px);
+    grid-gap: 40px;
+}
+
+#donate-tile .community-text,
+#donate-tile .donate-text,
+#donate-tile .disposable-text {
+    margin: auto 50px  ;
+}
+
+#donate-tile .community-text p,
+#donate-tile .donate-text p,
+#donate-tile .disposable-text p{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 2;
+}
+
+#donate-tile .community-text .learn-button,
+#donate-tile .donate-text .learn-button,
+#donate-tile .disposable-text .learn-button {
+    width: 200px;
+    padding: 10px 50px;
+    border: 1px solid black;
+    transition: transform .5s;
+    font-size: 12px;
+    text-align: center;
+}
+
+#donate-tile .community-text .learn-button:hover,
+#donate-tile .donate-text .learn-button:hover,
+#donate-tile .disposable-text .learn-button:hover {
+    transform: var(--hover);
+    color: white;
+    background-color: black;
+}
+
+/*--*/
+
+#footer {
+    padding: 50px;
+    padding-bottom: 15px;
+    background-color: rgb(238, 226, 226);
+} 
+
+#footer .main-logo {
+    font-size: 30px;
+    font-style:italic;
+}
+
+#footer-tile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    
+}
+
+#footer-tile img {
+    width: 35px;
+    height: 35px;
+}
+#footer-tile h2{
+    font-size: 15px;
+}
+
+#footer-tile p{
+    font-size: 13px;
+}
+
+
+#footer-tile .form .textinput {
+    height: 30px;
+}
+#footer-tile .form .submitinput {
+    height: 30px;
+    color: white;
+    background-color: black;
+}
+
+#footer-footer {
+    padding-top: 70px;
+    display: flex;
+    margin-bottom: 0;
+}
+
+#footer-footer p {
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+}

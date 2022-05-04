@@ -1,0 +1,159 @@
+/* Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    #bag-section {  
+        border-top: 1px solid rgb(95, 82, 82);
+    }
+    
+    
+    #bag-section #bags {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: repeat(4, 1fr);
+        justify-items: center;
+        text-align: center;
+    }
+    .backpacks1 p:nth-child(2),
+    .backpacks2 p:nth-child(2),
+    .backpacks3 p:nth-child(2),
+    .backpacks4 p:nth-child(2) {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    #bags .price {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    #text-tile-bags {
+        margin: 75px 20px;
+        font-size: 14px;
+    }
+    
+    #text-tile-bags p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    #text-tile-bags h4 {
+        font-weight: 700;
+        font-size: 8px;
+        text-transform: uppercase;
+        color: rgb(80, 106, 145);
+    }
+
+
+}
+
+/* iPads or Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    #bag-section {  
+        border-top: 1px solid rgb(95, 82, 82);
+    }
+
+    #bag-section img{
+        width: 300px;
+        height: auto;
+    }
+    #bag-section #bags {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: repeat(4, 1fr);
+        grid-row-gap: 55px;
+    }
+    .backpacks1 p:nth-child(2),
+    .backpacks2 p:nth-child(2),
+    .backpacks3 p:nth-child(2),
+    .backpacks4 p:nth-child(2) {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    #bags .price {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    #text-tile-bags {
+        margin: 75px 20px;
+        
+    }    
+    
+    
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 992px) {
+    #bag-section {  
+        border-top: 1px solid rgb(95, 82, 82);
+    }
+    
+    #bag-section img{
+        width: 300px;
+        height: auto;
+    }
+
+    #bag-section #bags {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        grid-template-rows: 1fr;
+        grid-row-gap: 55px;
+    }
+    
+    .backpacks1 p:nth-child(2),
+    .backpacks2 p:nth-child(2),
+    .backpacks3 p:nth-child(2),
+    .backpacks4 p:nth-child(2) {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    #bags .price {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    #text-tile-bags {
+        margin: 75px 20px;
+        
+    }    
+    
+}
+
+/* Desktop */
+@media (min-width: 993px) and (max-width: 1200px) {
+   #bag-section {  
+    border-top: 1px solid rgb(95, 82, 82);
+}
+
+
+.backpacks1 p:nth-child(2),
+.backpacks2 p:nth-child(2),
+.backpacks3 p:nth-child(2),
+.backpacks4 p:nth-child(2) {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+#bags .price {
+    font-size: 12px;
+    margin: 0;
+}
+
+#text-tile-bags {
+    margin: 150px;
+}
+
+#text-tile-bags p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#text-tile-bags h4 {
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgb(80, 106, 145);
+}
+   
+}
